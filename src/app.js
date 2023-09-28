@@ -12,7 +12,7 @@ app.use(
   cors({
     //origin: "http://localhost:5173",
     origin: "https://adpm-tasks.netlify.app/",
-    credentials: true,
+    credentials: false,
   })
 );
 app.use(morgan("dev"));

@@ -1,5 +1,5 @@
 {
-  "name": "ADPM Tasks",
+  "name": "ADPM_Tasks",
   "version": "1.0.0",
   "description": "Backend de ADPM Tasks app",
   "main": "index.js",

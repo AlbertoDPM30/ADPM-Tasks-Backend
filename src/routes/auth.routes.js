@@ -22,4 +22,8 @@ router.get("/verify", verifyToken);
 
 router.get("/profile", authRequired, profile);
 
+router.get("/isAlive", (req, res) => {
+  res.send("Funciona");
+});
+
 export default router;

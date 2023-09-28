@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index",
-    "start": "yarn run src/index"
+    "start": "yarn run src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

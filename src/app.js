@@ -9,11 +9,12 @@ import tasksRoutes from "./routes/tasks.routes.js";
 const app = express();
 
 app.use(
-  cors(/* {
+  cors({
     //origin: "http://localhost:5173",
     //origin: "https://adpm-tasks.netlify.app/",
-    //credentials: false,
-  } */)
+    origin: ["http://localhost:5173", "https://adpm-tasks.netlify.app/"],
+    credentials: true,
+  })
 );
 app.use(morgan("dev"));
 app.use(express.json());

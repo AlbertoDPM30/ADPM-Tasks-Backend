@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
-import "dotenv/config";
+//import "dotenv/config";
 
-const MONGO_USER = process.env.MONGO_USER;
+/* const MONGO_USER = process.env.MONGO_USER;
 const MONGO_PASS = process.env.MONGO_PASS;
-const MONGO_HOST = process.env.MONGO_HOST;
+const MONGO_HOST = process.env.MONGO_HOST; */
 
 export const ConnectDB = async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOST}/?retryWrites=true&w=majority`,
+      `mongodb+srv://alberto3010:28022806@merndb.mtyhwca.mongodb.net/?retryWrites=true&w=majority`,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

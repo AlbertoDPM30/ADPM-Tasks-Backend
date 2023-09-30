@@ -12,12 +12,12 @@ app.use(
   cors({
     //origin: "http://localhost:5173",
     //origin: "https://adpm-tasks.netlify.app/",
-    /* origin: [
+    origin: [
       "http://localhost:5173",
       "https://adpm-tasks.netlify.app",
       "https://main--adpm-tasks.netlify.app",
       "https://651548357809a40008935662--adpm-tasks.netlify.app",
-    ], */
+    ],
     credentials: true,
   })
 );

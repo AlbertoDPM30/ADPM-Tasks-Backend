@@ -1,6 +1,17 @@
 import app from "./app.js";
+import "dotenv/config";
 import { ConnectDB } from "./db.js";
 
-ConnectDB();
-app.listen(3000);
-console.log("Escucha en el puerto 3000");
+const PORT = process.env.PORT;
+
+const conected = () => {
+  try {
+    app.listen(PORT);
+    ConnectDB();
+    console.log(`Escucha en el puerto ${PORT}`);
+  } catch (error) {
+    console.log("Fallo al conectarse al servidor");
+    console.log(error);
+  }
+};
+conected();
